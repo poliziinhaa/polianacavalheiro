@@ -1,0 +1,24 @@
+print('Bem vindo à calculadora de Python')
+print('-*-' * 20)
+print('''Qual opção você deseja fazer?
+[01] - soma
+[02] - subtração
+[03] - multiplicação
+[04] - divisão
+''')
+print('-*-' * 20)
+número1 = float(input('Digite o primeiro número: '))
+número2 = float(input(('Digite o segundo número: ')))
+menu = str(input('Escolha qual opção você quer fazer com os números digitados acima e de acordo com o menu: '))
+if menu == 1:
+    soma = número1 + número2
+    print(f'A soma de {número1} com {número2} é igual a {soma:2.f}')
+elif menu == 2:
+    subtração = número1 - número2
+    print(f'A subtração de {número1} com {número2} é igual a {subtração:.2f}')
+elif menu == 3:
+    multiplicação = número1 * número2
+    print(f'A multiplicação entre {número1} e {número2} é igual a {multiplicação:.2f}')
+else:
+    divisão = número1 / número2
+    print(f'A divisão entre {número1} e {número2} é igual a {divisão:.2f}')
